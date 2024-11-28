@@ -3,8 +3,8 @@ from pymongo import MongoClient
 from bson import ObjectId
 import datetime
 
-client = MongoClient("mongodb+srv://aguillemin291:erleiuhOoKl8uYbk@cluster0.vsgyr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-db = client["Scrutin"]
+client = MongoClient("mongodb://localhost:27017/")
+db = client["condo"]
 elections_collection = db["elections"]
 users_collection = db["users"]
 
