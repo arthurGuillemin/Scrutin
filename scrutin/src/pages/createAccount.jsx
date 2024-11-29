@@ -28,7 +28,7 @@ function CreateAccount() {
 
   return (
     <div className="create-account-container">
-        <h1 className="logo">Condo</h1>
+        <h1 className="logoPage">Condo</h1>
 
       <form className="create-account-form" onSubmit={handleSubmit}>
       <p>
