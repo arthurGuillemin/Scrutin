@@ -1,10 +1,28 @@
-import React from "react";
-import "./header.css";
-import avatarImage from "../../assets/images/avatar.png";
+import React, { useState, useEffect } from "react";
+import "../assets/css/header.css";
+import avatarImage from "../assets/images/avatar.png";
 
 function Header({ isAuthenticated }) {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={isScrolled ? "scrolled" : ""}>
       <div>
         <h1 className="logo">Condo</h1>
       </div>

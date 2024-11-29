@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/header/header";
-import CreateScrutin from "./components/CreateScrutin/CreateScrutin.jsx";
+import Header from "./components/header";
+import CreateScrutin from "./pages/CreateScrutin.jsx";
 
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
 
   return (
     <Router>
