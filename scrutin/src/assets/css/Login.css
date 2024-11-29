@@ -1,29 +1,25 @@
-.create-account-container {
+.connection-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 70vh;
     font-family: Arial, sans-serif;
   }
   
   h1 {
     font-weight: bold;
   }
-
-  .connection{
-    padding-right: 6rem;
-  }
   
-  .logo {
+  .logoPage {
     font-family: "Anybody", sans-serif;
     color: #028958;
     font-size: 40px;
-    align-self: flex-start;  
-    margin-left: 30rem; 
+    align-self: flex-start; 
+    margin-left: 30rem;  
   }
   
-  .create-account-form {
+  .connection-form {
     width: 100%;
     max-width: 500px; 
     padding: 20px;
