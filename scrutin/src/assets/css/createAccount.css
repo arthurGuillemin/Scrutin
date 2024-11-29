@@ -1,0 +1,88 @@
+.create-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-weight: bold;
+  }
+
+  .connection{
+    padding-right: 6rem;
+  }
+  
+  .logo {
+    font-family: "Anybody", sans-serif;
+    color: #028958;
+    font-size: 40px;
+    align-self: flex-start;  
+    margin-left: 30rem; 
+  }
+  
+  .create-account-form {
+    width: 100%;
+    max-width: 500px;  /* Augmentation de la largeur maximale */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .create-account-form h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    border-color: #3a8a60;
+    outline: none;
+  }
+  
+  button.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a8a60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button.submit-button:hover {
+    background-color: #2e6e4e;
+  }
+  
+  small {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  a {
+    color: #3a8a60;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
