@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Anybody";
+  src: url("../../assets/fronts/Anybody-Variable.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Actor";
+    src: url("../../assets/fronts/Actor-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.logo {
+  font-family: "Anybody", sans-serif;
+  color: #028958;
+  font-size: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Actor", sans-serif;
+  font-size: 18px;
+}
+
+.connexion {
+  color: #028958;
+  text-decoration: none;
+  margin-right: 30px;
+  font-family: "Actor", sans-serif;
+  font-size: 18px;
+}
+
+.inscription {
+  color: white;
+  background-color: #028958;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Actor", sans-serif;
+  font-size: 18px;
+}
+
+.profil-icon {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}

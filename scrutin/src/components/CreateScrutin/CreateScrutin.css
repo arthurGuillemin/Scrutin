@@ -1,0 +1,59 @@
+.create-scrutin-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.create-scrutin-container h1 {
+  color: #028958;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.create-scrutin-container p {
+  margin-bottom: 20px;
+  color: #000;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.add-answer-button {
+  background-color: white;
+  color: #028958;
+  padding: 10px 15px;
+  border: 2px solid #028958;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-answer-button:hover {
+  background-color: #028958;
+  color: white;
+}
+
+.submit-button {
+  background-color: #028958;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #026f46;
+}
