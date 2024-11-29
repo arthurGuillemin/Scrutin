@@ -1,6 +1,6 @@
 import React from "react";
-import "./home.css";
-import graphHomeImage from '../../assets/images/graphHome.jpg';
+import "../assets/css/home.css";
+import graphHomeImage from '../assets/images/graphHome.jpg';
 
 function HomePage() {
     return (
