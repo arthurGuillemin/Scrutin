@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CreateScrutin.css";
+import "../assets/css/CreateScrutin.css";
 
 function CreateScrutin() {
   const [title, setTitle] = useState("");
@@ -7,6 +7,8 @@ function CreateScrutin() {
   const [description, setDescription] = useState("");
   const [question, setQuestion] = useState("");
   const [answers, setAnswers] = useState(["", ""]);
+  const [deadline, setDeadline] = useState("");
+
 
   const addAnswer = () => {
     setAnswers([...answers, ""]);
@@ -26,6 +28,7 @@ function CreateScrutin() {
       description,
       question,
       answers,
+      deadline,
     });
     alert("Scrutin enregistré !");
   };
@@ -47,26 +50,37 @@ function CreateScrutin() {
           required
         />
 
-        <select
-          value={scrutinType}
-          onChange={(e) => setScrutinType(e.target.value)}
-          required
-        >
-          <option value="" disabled>
-            Type de scrutin
-          </option>
-          <option value="Condorcet">Vote de Condorcet</option>
-          <option value="Majoritaire">Vote Majoritaire</option>
-          <option value="Prioritaire">Vote Prioritaire</option>
-        </select>
+<select
+  className="custom-select"
+  value={scrutinType}
+  onChange={(e) => setScrutinType(e.target.value)}
+  required
+>
+  <option value="" disabled>
+    Type de scrutin
+  </option>
+  <option value="Condorcet">Vote de Condorcet</option>
+  <option value="Majoritaire">Vote Majoritaire</option>
+  <option value="Prioritaire">Vote Prioritaire</option>
+</select>
 
-        <textarea
-          placeholder="Description du scrutin"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          maxLength={200}
-        ></textarea>
-        <p>{description.length}/200</p>
+
+        <div className="textarea-container">
+  <textarea
+    placeholder="Description du scrutin"
+    value={description}
+    onChange={(e) => setDescription(e.target.value)}
+    maxLength={200}
+  ></textarea>
+  <span className="char-counter">{description.length}/200</span>
+</div>
+<input
+  type="date"
+  placeholder="Date d'échéance"
+  value={deadline}
+  onChange={(e) => setDeadline(e.target.value)}
+  required
+/>
 
         <input
           type="text"
