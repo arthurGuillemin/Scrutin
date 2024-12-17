@@ -31,9 +31,9 @@ function CreateAccount() {
         <h1 className="logoPage">Condo</h1>
 
       <form className="create-account-form" onSubmit={handleSubmit}>
-      <p>
+      <small>
         Vous disposez déjà d'un compte ? <span class="connection"><a href="/login">Se connecter</a></span>
-      </p>
+      </small>
         <h1>Créer un compte</h1>
 
         <div className="form-row">
@@ -81,7 +81,7 @@ function CreateAccount() {
           onChange={handleChange}
           required
         />
-        <small>Votre mot de passe doit contenir au moins 8 caractères.</small>
+        <p>Votre mot de passe doit contenir au moins 8 caractères.</p>
 
         <input
           type="password"

@@ -42,10 +42,10 @@ function Header({ isAuthenticated }) {
           </a>
         ) : (
           <>
-            <a href="/connexion" className="connexion">
+            <a href="/login" className="connexion">
               Connexion
             </a>
-            <a href="/inscription" className="inscription">
+            <a href="/createAccount" className="inscription">
               Inscription
             </a>
           </>

@@ -1,3 +1,7 @@
+:root{
+  --btn_color : #18B87E;
+  --btn_hover : #028958
+}
 .create-account-container {
     display: flex;
     flex-direction: column;
@@ -10,6 +14,7 @@
   h1 {
     font-weight: bold;
   }
+
 
   .connection{
     padding-right: 6rem;
@@ -60,7 +65,7 @@
   button.submit-button {
     width: 100%;
     padding: 10px;
-    background-color: #3a8a60;
+    background-color: var(--btn_color);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -69,12 +74,13 @@
   }
   
   button.submit-button:hover {
-    background-color: #2e6e4e;
+    background-color: var(--btn_hover);
   }
   
   small {
     color: #666;
     font-size: 12px;
+    padding-left: 12rem;
   }
   
   a {

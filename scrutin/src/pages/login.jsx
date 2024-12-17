@@ -14,7 +14,7 @@ const Login = () => {
       <div className="logoPage">Condo</div>
       <div className="connection-form">
       <small>
-          Vous n'avez pas encore de compte ? <a href="/signup">S'inscrire</a>
+          Vous n'avez pas encore de compte ? <a href="/createAccount">S'inscrire</a>
         </small>
         <h2>Connexion</h2>
         <form onSubmit={handleSubmit}>
