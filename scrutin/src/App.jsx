@@ -5,6 +5,7 @@ import CreateScrutin from "./pages/CreateScrutin.jsx";
 import Login from "./pages/login.jsx";
 import CreateAccount from "./pages/createAccount.jsx";
 import HomePage from './pages/home';
+import Results from "./pages/Results.jsx";
 
 
 function App() {
@@ -14,10 +15,11 @@ function App() {
     <Router>
       <Header isAuthenticated={isAuthenticated} />
       <Routes>
-        <Route path="/creation" element={<CreateScrutin />} />
+      <Route path="/CreateScrutin" element={<CreateScrutin />} />
         <Route path="/login" element={<Login />} />
         <Route path="/createAccount" element={<CreateAccount />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/results" element={<Results />} />
       </Routes>
     </Router>
   );

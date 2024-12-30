@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../assets/css/CreateScrutin.css";
 
 function CreateScrutin() {
@@ -13,7 +13,6 @@ function CreateScrutin() {
   const addAnswer = () => {
     setAnswers([...answers, ""]);
   };
-
   const handleAnswerChange = (index, value) => {
     const updatedAnswers = [...answers];
     updatedAnswers[index] = value;

@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../assets/css/header.css";
 import avatarImage from "../assets/images/avatar.png";
+import { Link } from "react-router-dom";
 
 function Header({ isAuthenticated }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,25 +30,25 @@ function Header({ isAuthenticated }) {
       <nav>
         {isAuthenticated ? (
           <>
-            <a href="/accueil">Accueil</a>
-            <a href="/creation">Création</a>
-            <a href="/scrutins">Liste de scrutin</a>
+            <Link href="/accueil">Accueil</Link>
+            <Link href="/creation">Création</Link>
+            <Link href="/scrutins">Liste de scrutin</Link>
           </>
         ) : null}
       </nav>
       <div>
         {isAuthenticated ? (
-          <a href="/profil">
+          <Link href="/profil">
             <img src={avatarImage} alt="Profil" className="profil-icon" />
-          </a>
+          </Link>
         ) : (
           <>
-            <a href="/login" className="connexion">
+            <Link href="/login" className="connexion">
               Connexion
-            </a>
-            <a href="/createAccount" className="inscription">
+            </Link>
+            <Link href="/createAccount" className="inscription">
               Inscription
-            </a>
+            </Link>
           </>
         )}
       </div>
